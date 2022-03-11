@@ -23,13 +23,24 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "json-server server.json -p 3333"
+    "server": "json-server --watch server.json -p 3333"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
-    ]
+      "react-app/jest",
+      "plugin:prettier/recommended"
+    ],
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "endOfLine": "auto",
+          "trailingComma": "all",
+          "singleQuote": true
+        }
+      ]
+    }
   },
   "browserslist": {
     "production": [
@@ -44,6 +55,9 @@
     ]
   },
   "devDependencies": {
-    "json-server": "^0.16.3"
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "json-server": "^0.16.3",
+    "prettier": "2.5.1"
   }
 }

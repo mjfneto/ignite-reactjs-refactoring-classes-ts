@@ -12,7 +12,7 @@ class ModalAddFood extends Component {
     this.formRef = createRef();
   }
 
-  handleSubmit = async data => {
+  handleSubmit = async (data) => {
     const { setIsOpen, handleAddFood } = this.props;
 
     handleAddFood(data);
@@ -42,6 +42,6 @@ class ModalAddFood extends Component {
       </Modal>
     );
   }
-};
+}
 
 export default ModalAddFood;

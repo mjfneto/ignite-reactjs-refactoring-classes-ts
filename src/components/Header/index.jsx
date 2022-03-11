@@ -14,10 +14,7 @@ class Header extends Component {
           <img src={Logo} alt="GoRestaurant" />
           <nav>
             <div>
-              <button
-                type="button"
-                onClick={openModal}
-              >
+              <button type="button" onClick={openModal}>
                 <div className="text">Novo Prato</div>
                 <div className="icon">
                   <FiPlusSquare size={24} />
@@ -27,8 +24,8 @@ class Header extends Component {
           </nav>
         </header>
       </Container>
-    )
+    );
   }
-};
+}
 
 export default Header;

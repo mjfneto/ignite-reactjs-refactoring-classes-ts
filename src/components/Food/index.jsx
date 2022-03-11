@@ -10,7 +10,7 @@ class Food extends Component {
 
     const { available } = this.props.food;
     this.state = {
-      isAvailable: available
+      isAvailable: available,
     };
   }
 
@@ -24,13 +24,13 @@ class Food extends Component {
     });
 
     this.setState({ isAvailable: !isAvailable });
-  }
+  };
 
   setEditingFood = () => {
     const { food, handleEditFood } = this.props;
 
     handleEditFood(food);
-  }
+  };
 
   render() {
     const { isAvailable } = this.state;
@@ -87,6 +87,6 @@ class Food extends Component {
       </Container>
     );
   }
-};
+}
 
 export default Food;

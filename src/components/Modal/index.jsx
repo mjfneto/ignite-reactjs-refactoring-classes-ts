@@ -7,16 +7,16 @@ class Modal extends Component {
 
     const { isOpen } = this.props;
     this.state = {
-      modalStatus: isOpen
-    }
+      modalStatus: isOpen,
+    };
   }
 
   componentDidUpdate(prevProps) {
     const { isOpen } = this.props;
 
     if (prevProps.isOpen !== isOpen) {
-      console.log(this.props)
-      this.setState({ modalStatus: isOpen })
+      console.log(this.props);
+      this.setState({ modalStatus: isOpen });
     }
   }
 
@@ -53,6 +53,6 @@ class Modal extends Component {
       </ReactModal>
     );
   }
-};
+}
 
 export default Modal;
