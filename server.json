@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Ao molho",
-      "description": "Macarrão ao molho branco, fughi e cheiro verde das montanhas",
+      "description": "Macarrão ao molho branco, funghi e cheiro verde das montanhas",
       "price": "19.90",
       "available": true,
       "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food1.png"
@@ -23,6 +23,14 @@
       "price": "25.90",
       "available": false,
       "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food3.png"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1594610352113-ad218529cfb7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "name": "Ravioli al pomodoro",
+      "price": "32.00",
+      "description": "A maravilha destes raviólis é que são feitos com a fina folha de lasanha de ovos frescos. São delicadamente recheados e temperados com molho e tomate e manjericão, um encontro terno e cheiroso.",
+      "available": true,
+      "id": 4
     }
   ]
 }

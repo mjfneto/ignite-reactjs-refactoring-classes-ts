@@ -1,6 +1,10 @@
 import styled, { css } from 'styled-components';
 
-export const Container = styled.div`
+type ContainerProps = {
+  readonly available: boolean;
+};
+
+export const Container = styled.div<ContainerProps>`
   background: #f0f0f5;
   border-radius: 8px;
 
@@ -19,6 +23,7 @@ export const Container = styled.div`
       `};
 
     img {
+      max-width: 100%;
       pointer-events: none;
       user-select: none;
     }
